@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Layout</title>
+
+<style>
+    .column {
+        float: left;
+    }
+    .siderbar-left, .sidebar-right {
+        width: 25%;
+    }
+    .main-content {
+        width: 50%;
+    }
+</style>
+</head>
+<body>
+    <div style="width: 25%;" class="column siderbar-left">
+        <h2>Sidebar 1</h2>
+        <p>This is the content for the 1st sidebar.</p>
+    </div>
+    <div style="width: 50%;" class="column main-content">
+        <h2>Main Content</h2>
+        <p>This is the content for the main content</p>
+    </div>
+    <div style="width: 25%;" class="column sidebar-right">
+        <h2>Sidebar 2</h2>
+        <p>This is the content for the 2nd sidebar.</p>
+    </div>
+</body>
+</html>

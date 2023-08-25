@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Layout</title>
+
+    <style>
+
+        /* Greater than 768px */
+            .column {
+                float: left;
+            }
+            .sidebar{
+                width: 25%;
+            }
+            .main-content {
+                width: 50%;
+            }
+            .container {
+                text-align: center;
+            }
+
+        /* Less than 768px */
+        @media screen and (max-width: 768px) {
+            .column, 
+            .sidebar,  
+            .main-content {
+                float:none;
+                width:100%;
+            }
+
+            .sidebar{
+                display:none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column sidebar">
+            <h2>Sidebar 1</h2>
+            <p>This is the content for the 1st sidebar.</p>
+        </div>
+        <div class="column main-content">
+            <h2>Main Content</h2>
+            <p>This is the content for the main content.</p>
+        </div>
+        <div class="column sidebar">
+            <h2>Sidebar 2</h2>
+            <p>This is the content for the 2nd sidebar.</p>
+        </div>
+    </div>
+</body>
+</html>
